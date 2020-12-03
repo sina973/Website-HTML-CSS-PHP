@@ -1,0 +1,71 @@
+<?php
+include_once "core.php";
+sessionAdmin();
+$id=$_GET['id'];
+$item=select_about_id($id);
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="<?php echo DOMAIN ?>/dist/CSS/admin.css">
+
+</head>
+<body>
+<section class="container">
+    <!-- Make menu -->
+    <?php include_once "_menu.php"; ?>
+    <!-- End of make menu -->
+    <!-- content -->
+    <section class="content">
+        <?php if (@$_SESSION['image_empty']): ?>
+            <h1 class="wrong_image"><?php echo $_SESSION['image_empty'];  ?></h1>
+        <?php endif; ?>
+
+        <?php if (@$_SESSION['image_size']): ?>
+            <h1 class="wrong_image"><?php echo $_SESSION['image_size'];  ?></h1>
+        <?php endif; ?>
+
+        <?php if (@$_SESSION['image_format']): ?>
+            <h1 class="wrong_image"><?php echo $_SESSION['image_format'];  ?></h1>
+        <?php endif; ?>
+
+        <?php if (@$_SESSION['fontSize_empty']): ?>
+            <h1 class="wrong_image"><?php echo $_SESSION['fontSize_empty'];  ?></h1>
+        <?php endif; ?>
+
+        <?php if (@$_SESSION['text_empty']): ?>
+            <h1 class="wrong_image"><?php echo $_SESSION['text_empty'];  ?></h1>
+        <?php endif; ?>
+
+        <h1>به روز رسانی اطلاعات مربوط به about با شناسه <?php echo $id ?></h1>
+        <a class="showDetails" href="<?php echo DOMAIN ?>/administrator/admin/show_details_about.php">نمایش همه ی اطلاعات</a>
+        <section class="form">
+            <form action="about/update.php" method="post" enctype="multipart/form-data">
+                <input type="text" name="title" value="<?php echo $item['title'] ?>">
+
+                <textarea name="text"><?php echo $item['text'] ?></textarea>
+                <input type="file" name="image">
+                <img src="<?php echo DOMAIN ?>/administrator/admin/about/Images/<?php echo $item['image'] ?>" alt="<?php echo $item['image'] ?>">
+                <input type="hidden" name="id" value="<?php echo $item['id']; ?>">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </section>
+    <!-- End of content -->
+    <?php
+    $_SESSION['image_empty']=null;
+    $_SESSION['image_format']=null;
+    $_SESSION['image_size']=null;
+    $_SESSION['fontSize_empty']=null;
+    $_SESSION['text_empty']=null;
+    ?>
+</section>
+</body>
+</html>
