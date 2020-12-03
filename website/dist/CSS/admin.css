@@ -1,0 +1,1417 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1100px){
+
+    /********************** Menu ***********************************/
+    .container{
+        width: 100%;
+        direction: rtl;
+    }
+    .container .menu{
+        width: 100%;
+        height: 50px;
+        background-color: darkslategrey;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+    .container .menu nav{
+        width: 100%;
+        height: 50px;
+    }
+    .container .menu nav ul{
+        width: inherit;
+        height: inherit;
+        list-style: none;
+    }
+    .container .menu nav ul li{
+        display: inline-block;
+        width: 12%;
+        height: inherit;
+        text-align: center;
+        padding-right: 15px;
+    }
+    .container .menu nav ul li a{
+        width: 100%;
+        height: 50px;
+        display: inline-block;
+        line-height: 50px;
+        text-align: center;
+        font-size: 15px;
+        color: whitesmoke;
+        font-family: "Iranian Sans";
+        text-decoration: none;
+    }
+    .container .menu nav ul li a:hover{
+        background-color: lightcoral;
+    }
+
+
+    /********************** End of menu ***********************************/
+    /********************** content ***********************************/
+    .container .content{
+        width: 80%;
+        padding: 25px;
+        margin: 20px auto;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.80), -5px -5px 5px rgba(0, 0, 0, 0.80);
+        border-radius: 10px;
+    }
+    .container .content h1{
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .container .content .wrong_image{
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 20px;
+        color: darkred;
+    }
+    .container .content a{
+        width: 40%;
+        height: 40px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        background-color: aqua;
+        color: #000048;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        line-height: 40px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .container .form {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        direction: ltr;
+    }
+
+    .container .form form {
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        box-sizing: border-box;
+    }
+
+    .container .form form input[type=text] {
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: "Comic Sans MS";
+        color: black;
+    }
+
+    .container .form form input[type=text]:focus {
+        width: 80%;
+    }
+
+    .container .form form input[type=text]::placeholder {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    .container .form form input[type=text]::-ms-value {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .container .form form textarea {
+        width: 70%;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        resize: none;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: black;
+    }
+
+    .container .form form textarea::placeholder {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        padding-top: 40px;
+    }
+
+    .container .form form img{
+        width: 200px;
+        height: 200px;
+        display: block;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .container .form form input[type=file]{
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        font-family: "Comic Sans MS";
+        color: rgba(0, 0, 0, 0.6);
+        box-sizing: border-box;
+    }
+
+    .container .form form input[type=submit] {
+        width: 40%;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: none;
+        background-color: darkgreen;
+        border-radius: 5px;
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: whitesmoke;
+        box-sizing: border-box;
+    }
+
+    .container .form form input[type=color] {
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+
+    /********************** End of content ***********************************/
+
+    /******************************** Show details page ******************************/
+    .details{
+        padding-top: 20px;
+    }
+
+    .details table{
+        width: 90%;
+        border-collapse: collapse;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 20px;
+        table-layout: fixed;
+    }
+    .details table tr:nth-child(odd){
+        background-color: darkgrey;
+        height: 40px;
+    }
+    .details table tr:nth-child(even){
+        background-color: whitesmoke;
+        height: 40px;
+    }
+    .details table tr .first{
+        background-color: darkgrey;
+        height: 40px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .details table tr td img{
+        width: 75px;
+        height: 75px;
+    }
+
+    .details table tr td{
+        padding: 3px;
+        padding-top: 8px !important;
+        font-family: "Comic Sans MS";
+        word-break: break-all;
+    }
+    .delete{
+        display: block;
+        width: 80% !important;
+        height: 40px !important;
+        background-color: darkred !important;
+        text-decoration: none;
+        margin: 0 auto !important;
+        border: none;
+        border-radius: 10px !important;
+        font-family: "Comic Sans MS" !important;
+        line-height: 40px !important;
+        font-size: 16px !important;
+    }
+    .update{
+        display: block;
+        width: 80% !important;
+        height: 40px !important;
+        background-color: sandybrown !important;
+        text-decoration: none;
+        margin: 0 auto !important;
+        border: none;
+        border-radius: 10px !important;
+        font-family: "Comic Sans MS" !important;
+        line-height: 40px !important;
+        font-size: 16px !important;
+    }
+
+    /******************************** End ofShow details page ******************************/
+
+}
+
+@media (min-width: 950px) and (max-width: 1100px){
+    /********************** admin ***********************************/
+    .container{
+        width: 100%;
+        direction: rtl;
+    }
+    .container .menu{
+        width: 100%;
+        height: 50px;
+        background-color: darkslategrey;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    .container .menu nav{
+        width: 100%;
+        height: 50px;
+    }
+    .container .menu nav ul{
+        width: inherit;
+        height: inherit;
+        list-style: none;
+    }
+    .container .menu nav ul li{
+        display: inline-block;
+        width: 12%;
+        height: inherit;
+        text-align: center;
+        padding-right: 15px;
+    }
+    .container .menu nav ul li a{
+        width: 100%;
+        height: 50px;
+        display: inline-block;
+        line-height: 50px;
+        text-align: center;
+        font-size: 13px;
+        color: whitesmoke;
+        font-family: "Iranian Sans";
+        text-decoration: none;
+    }
+    .container .menu nav ul li a:hover{
+        background-color: lightcoral;
+    }
+
+
+    /********************** End of admin ***********************************/
+    /********************** content ***********************************/
+    .container .content{
+        width: 80%;
+        padding: 25px;
+        margin: 20px auto;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.80), -5px -5px 5px rgba(0, 0, 0, 0.80);
+        border-radius: 10px;
+    }
+    .container .content h1{
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .container .content .wrong_image{
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        color: darkred;
+    }
+    .container .content a{
+        width: 40%;
+        height: 40px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        background-color: aqua;
+        color: #000048;
+        font-family: "B Nazanin";
+        font-size: 17px;
+        line-height: 40px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .container .form {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        direction: ltr;
+    }
+
+    .container .form form {
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        box-sizing: border-box;
+    }
+
+    .container .form form input[type=text] {
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: "Comic Sans MS";
+        color: black;
+    }
+
+    .container .form form input[type=text]:focus {
+        width: 80%;
+    }
+
+    .container .form form input[type=text]::placeholder {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    .container .form form input[type=text]::-ms-value {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .container .form form textarea {
+        width: 70%;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        resize: none;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: black;
+    }
+
+    .container .form form textarea::placeholder {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        padding-top: 40px;
+    }
+
+    .container .form form img{
+        width: 200px;
+        height: 200px;
+        display: block;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .container .form form input[type=file]{
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        font-family: "Comic Sans MS";
+        color: rgba(0, 0, 0, 0.6);
+        box-sizing: border-box;
+    }
+
+    .container .form form input[type=submit] {
+        width: 40%;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: none;
+        background-color: darkgreen;
+        border-radius: 5px;
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: whitesmoke;
+        box-sizing: border-box;
+    }
+
+    .container .form form input[type=color] {
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+
+    /********************** End of content ***********************************/
+
+    /******************************** Show details page ******************************/
+    .details{
+        padding-top: 20px;
+    }
+
+    .details table{
+        width: 90%;
+        border-collapse: collapse;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 20px;
+        table-layout: fixed;
+    }
+
+    .details table tr:nth-child(odd){
+        background-color: darkgrey;
+        height: 40px;
+    }
+    .details table tr:nth-child(even){
+        background-color: whitesmoke;
+        height: 40px;
+    }
+
+    .details table tr .first{
+        background-color: darkgrey;
+        height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .details table tr td img{
+        width: 75px;
+        height: 75px;
+    }
+
+    .details table tr td{
+        padding: 3px;
+        padding-top: 8px !important;
+        font-family: "Comic Sans MS";
+        word-break: break-all;
+        font-size: 14px;
+    }
+
+    .delete{
+        display: block;
+        width: 80% !important;
+        height: 40px !important;
+        background-color: darkred !important;
+        text-decoration: none;
+        margin: 0 auto !important;
+        border: none;
+        border-radius: 10px !important;
+        font-family: "Comic Sans MS" !important;
+        line-height: 40px !important;
+        font-size: 14px !important;
+    }
+    .update{
+        display: block;
+        width: 80% !important;
+        height: 40px !important;
+        background-color: sandybrown !important;
+        text-decoration: none;
+        margin: 0 auto !important;
+        border: none;
+        border-radius: 10px !important;
+        font-family: "Comic Sans MS" !important;
+        line-height: 40px !important;
+        font-size: 14px !important;
+    }
+
+    /******************************** End ofShow details page ******************************/
+
+}
+
+@media (min-width: 768px) and (max-width: 950px){
+
+    /********************** Menu ***********************************/
+    .container{
+        width: 100%;
+        direction: rtl;
+    }
+    .container .menu{
+        width: 100%;
+        height: 40px;
+        background-color: darkslategrey;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    .container .menu nav{
+        width: 100%;
+        height: 40px;
+    }
+    .container .menu nav ul{
+        width: inherit;
+        height: inherit;
+        list-style: none;
+    }
+    .container .menu nav ul li{
+        display: inline-block;
+        width: 12%;
+        height: inherit;
+        text-align: center;
+        padding-right: 10px;
+    }
+    .container .menu nav ul li a{
+        width: 100%;
+        height: 40px;
+        display: inline-block;
+        line-height: 40px;
+        text-align: center;
+        font-size: 10px;
+        color: whitesmoke;
+        font-family: "Iranian Sans";
+        text-decoration: none;
+    }
+    .container .menu nav ul li a:hover{
+        background-color: lightcoral;
+    }
+
+
+    /********************** End of menu ***********************************/
+    /********************** content ***********************************/
+    .container .content{
+        width: 80%;
+        padding: 25px;
+        margin: 20px auto;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.80), -5px -5px 5px rgba(0, 0, 0, 0.80);
+        border-radius: 10px;
+    }
+    .container .content h1{
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .container .content .wrong_image{
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 15px;
+        color: darkred;
+    }
+    .container .content a{
+        width: 40%;
+        height: 35px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        background-color: aqua;
+        color: #000048;
+        font-family: "B Nazanin";
+        font-size: 14px;
+        line-height: 35px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .container .form {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        direction: ltr;
+    }
+
+    .container .form form {
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        box-sizing: border-box;
+    }
+
+    .container .form form input[type=text] {
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: "Comic Sans MS";
+        color: black;
+    }
+
+    .container .form form input[type=text]:focus {
+        width: 80%;
+    }
+
+    .container .form form input[type=text]::placeholder {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 11px;
+    }
+    .container .form form input[type=text]::-ms-value {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .container .form form textarea {
+        width: 70%;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px !important;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        resize: none;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: black;
+    }
+
+    .container .form form textarea::placeholder {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        padding-top: 40px;
+        font-size: 11px;
+    }
+
+    .container .form form img{
+        width: 200px;
+        height: 200px;
+        display: block;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .container .form form input[type=file]{
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        font-family: "Comic Sans MS";
+        color: rgba(0, 0, 0, 0.6);
+        box-sizing: border-box;
+        font-size: 11px;
+    }
+
+
+    .container .form form input[type=submit] {
+        width: 40%;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px !important;
+        border: none;
+        background-color: darkgreen;
+        border-radius: 5px;
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: whitesmoke;
+        box-sizing: border-box;
+    }
+
+    .container .form form input[type=color] {
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+
+    /********************** End of content ***********************************/
+
+    /******************************** Show details page ******************************/
+    .details{
+        padding-top: 20px;
+    }
+
+    .details table{
+        width: 90%;
+        border-collapse: collapse;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 20px;
+        table-layout: fixed;
+    }
+    .details table tr:nth-child(odd){
+        background-color: darkgrey;
+        height: 35px;
+    }
+    .details table tr:nth-child(even){
+        background-color: whitesmoke;
+        height: 35px;
+    }
+    .details table tr .first{
+        background-color: darkgrey;
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .details table tr td img{
+        width: 50px;
+        height: 50px;
+    }
+    .details table tr td{
+        padding: 3px;
+        padding-top: 8px !important;
+        font-family: "Comic Sans MS";
+        word-break: break-all;
+        font-size: 12px;
+    }
+    .delete{
+        display: block;
+        width: 80% !important;
+        height: 40px !important;
+        background-color: darkred !important;
+        text-decoration: none;
+        margin: 0 auto !important;
+        border: none;
+        border-radius: 10px !important;
+        font-family: "Comic Sans MS" !important;
+        line-height: 40px !important;
+        font-size: 12px !important;
+    }
+    .update{
+        display: block;
+        width: 80% !important;
+        height: 40px !important;
+        background-color: sandybrown !important;
+        text-decoration: none;
+        margin: 0 auto !important;
+        border: none;
+        border-radius: 10px !important;
+        font-family: "Comic Sans MS" !important;
+        line-height: 40px !important;
+        font-size: 12px !important;
+    }
+
+    /******************************** End ofShow details page ******************************/
+
+}
+
+@media (min-width: 580px) and (max-width: 768px){
+
+    /********************** Menu ***********************************/
+    .container{
+        width: 100%;
+        direction: rtl;
+    }
+    .container .menu{
+        width: 100%;
+        height: 30px;
+        background-color: darkslategrey;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    .container .menu nav{
+        width: 100%;
+        height: 30px;
+    }
+    .container .menu nav ul{
+        width: inherit;
+        height: inherit;
+        list-style: none;
+    }
+    .container .menu nav ul li{
+        display: inline-block;
+        width: 12%;
+        height: inherit;
+        text-align: center;
+        padding-right: 8px;
+    }
+    .container .menu nav ul li a{
+        width: 100%;
+        height: 30px;
+        display: block;
+        line-height: 30px;
+        text-align: center;
+        font-size: 8px;
+        color: whitesmoke;
+        font-family: "Iranian Sans";
+        text-decoration: none;
+    }
+    .container .menu nav ul li a:hover{
+        background-color: lightcoral;
+    }
+
+
+    /********************** End of menu ***********************************/
+    /********************** content ***********************************/
+    .container .content{
+        width: 80%;
+        padding: 25px;
+        margin: 20px auto;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.80), -5px -5px 5px rgba(0, 0, 0, 0.80);
+        border-radius: 10px;
+    }
+    .container .content h1{
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .container .content .wrong_image{
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 15px;
+        color: darkred;
+    }
+    .container .content a{
+        width: 40%;
+        height: 30px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        background-color: aqua;
+        color: #000048;
+        font-family: "B Nazanin";
+        font-size: 12px;
+        line-height: 30px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .container .form {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        direction: ltr;
+    }
+
+    .container .form form {
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        box-sizing: border-box;
+    }
+
+    .container .form form input[type=text] {
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: "Comic Sans MS";
+        color: black;
+    }
+
+    .container .form form input[type=text]:focus {
+        width: 80%;
+    }
+
+    .container .form form input[type=text]::placeholder {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 9px;
+    }
+    .container .form form input[type=text]::-ms-value {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .container .form form textarea {
+        width: 70%;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px !important;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        resize: none;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: black;
+    }
+
+    .container .form form textarea::placeholder {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        padding-top: 40px;
+        font-size: 9px;
+    }
+
+    .container .form form img{
+        width: 200px;
+        height: 200px;
+        display: block;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 20px !important;
+    }
+
+    .container .form form input[type=file]{
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        font-family: "Comic Sans MS";
+        color: rgba(0, 0, 0, 0.6);
+        box-sizing: border-box;
+        font-size: 9px;
+    }
+
+    .container .form form input[type=submit] {
+        width: 40%;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: none;
+        background-color: darkgreen;
+        border-radius: 5px;
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: whitesmoke;
+        box-sizing: border-box;
+    }
+
+    .container .form form input[type=color] {
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+
+    /********************** End of content ***********************************/
+
+    /******************************** Show details page ******************************/
+    .details{
+        padding-top: 20px;
+    }
+
+    .details table{
+        width: 90%;
+        border-collapse: collapse;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 20px;
+        table-layout: fixed;
+    }
+    .details table tr:nth-child(odd){
+        background-color: darkgrey;
+        height: 40px;
+    }
+    .details table tr:nth-child(even){
+        background-color: whitesmoke;
+        height: 40px;
+    }
+    .details table tr .first{
+        background-color: darkgrey;
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .details table tr td img{
+        width: 50px;
+        height: 50px;
+    }
+    .details table tr td{
+        padding: 3px;
+        padding-top: 8px !important;
+        font-family: "Comic Sans MS";
+        word-break: break-all;
+        font-size: 10px;
+    }
+
+    .delete{
+        display: block;
+        width: 80% !important;
+        height: 40px !important;
+        background-color: darkred !important;
+        text-decoration: none;
+        margin: 0 auto !important;
+        border: none;
+        border-radius: 10px !important;
+        font-family: "Comic Sans MS" !important;
+        line-height: 40px !important;
+        font-size: 11px !important;
+    }
+    .update{
+        display: block;
+        width: 80% !important;
+        height: 40px !important;
+        background-color: sandybrown !important;
+        text-decoration: none;
+        margin: 0 auto !important;
+        border: none;
+        border-radius: 10px !important;
+        font-family: "Comic Sans MS" !important;
+        line-height: 40px !important;
+        font-size: 11px !important;
+    }
+
+    /******************************** End ofShow details page ******************************/
+
+}
+
+@media (max-width: 580px){
+
+    /********************** Menu ***********************************/
+    .container{
+        width: 100%;
+        direction: rtl;
+    }
+    .container .menu{
+        width: 100%;
+        height: auto;
+        background-color: darkslategrey;
+        box-sizing: border-box;
+    }
+    .container .menu nav{
+        width: 100%;
+        height: inherit;
+    }
+    .container .menu nav ul{
+        width: inherit;
+        height: inherit;
+        list-style: none;
+    }
+    .container .menu nav ul li{
+        display: block;
+        width: auto;
+        height: inherit;
+        text-align: center;
+    }
+    .container .menu nav ul li a{
+        width: 100%;
+        height: 30px;
+        display: block;
+        line-height: 30px;
+        text-align: center;
+        font-size: 12px;
+        color: whitesmoke;
+        font-family: "Iranian Sans";
+        text-decoration: none;
+    }
+    .container .menu nav ul li a:hover{
+        background-color: lightcoral;
+    }
+
+
+    /********************** End of menu ***********************************/
+    /********************** content ***********************************/
+    .container .content{
+        width: 80%;
+        padding: 25px;
+        margin: 20px auto;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.80), -5px -5px 5px rgba(0, 0, 0, 0.80);
+        border-radius: 10px;
+    }
+    .container .content h1{
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .container .content .wrong_image{
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 15px;
+        color: darkred;
+    }
+    .container .content a{
+        width: 40%;
+        height: 30px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        background-color: aqua;
+        color: #000048;
+        font-family: "B Nazanin";
+        font-size: 12px;
+        line-height: 30px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .container .form {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        direction: ltr;
+    }
+
+    .container .form form {
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        box-sizing: border-box;
+    }
+
+    .container .form form input[type=text] {
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: "Comic Sans MS";
+        color: black;
+        font-size: 7px;
+    }
+
+    .container .form form input[type=text]:focus {
+        width: 80%;
+    }
+
+    .container .form form input[type=text]::placeholder {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 7px;
+    }
+    .container .form form input[type=text]::-ms-value {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .container .form form textarea {
+        width: 70%;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        resize: none;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: black;
+        font-size: 7px;
+    }
+
+    .container .form form textarea::placeholder {
+        font-family: "Comic Sans MS";
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        padding-top: 40px;
+        font-size: 7px;
+        word-break: break-all;
+    }
+
+    .container .form form img{
+        width: 200px;
+        height: 200px;
+        display: block;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .container .form form input[type=file]{
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        font-family: "Comic Sans MS";
+        color: rgba(0, 0, 0, 0.6);
+        box-sizing: border-box;
+        font-size: 7px;
+    }
+
+    .container .form form input[type=submit] {
+        width: 40%;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        background-color: darkgreen;
+        border-radius: 5px;
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: whitesmoke;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+
+    .container .form form input[type=color] {
+        width: 70%;
+        display: block;
+        height: 30px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: 2px inset lightgrey;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+
+    /********************** End of content ***********************************/
+
+    /******************************** Show details page ******************************/
+    .details{
+        padding-top: 20px;
+    }
+
+    .details table{
+        width: 90%;
+        border-collapse: collapse;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 20px;
+        table-layout: fixed;
+    }
+    .details table tr:nth-child(odd){
+        background-color: darkgrey;
+        height: 40px;
+    }
+    .details table tr:nth-child(even){
+        background-color: whitesmoke;
+        height: 40px;
+    }
+    .details table tr .first{
+        background-color: darkgrey;
+        height: 40px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .details table tr td img{
+        width: 20px;
+        height: 20px;
+    }
+    .details table tr td{
+        padding: 3px;
+        padding-top: 8px !important;
+        font-family: "Comic Sans MS";
+        word-break: break-all;
+        font-size: 8px;
+    }
+    .delete{
+        display: block;
+        width: 80% !important;
+        height: 40px !important;
+        background-color: darkred !important;
+        text-decoration: none;
+        margin: 0 auto !important;
+        border: none;
+        border-radius: 10px !important;
+        font-family: "Comic Sans MS" !important;
+        line-height: 40px !important;
+        font-size: 8px !important;
+    }
+    .update{
+        display: block;
+        width: 80% !important;
+        height: 40px !important;
+        background-color: sandybrown !important;
+        text-decoration: none;
+        margin: 0 auto !important;
+        border: none;
+        border-radius: 10px !important;
+        font-family: "Comic Sans MS" !important;
+        line-height: 40px !important;
+        font-size: 8px !important;
+    }
+
+    /******************************** End ofShow details page ******************************/
+
+}

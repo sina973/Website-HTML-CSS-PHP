@@ -1,0 +1,1491 @@
+* {
+    margin: 0;
+    border: 0;
+}
+/******************************************** Font ----------> IranSans **********************************************/
+@font-face {
+    font-family: "IranSans";
+    src: url("../Fonts/eot/IRANSans(FaNum)_Medium.eot");
+    src: url("../Fonts/ttf/IRANSansWeb(FaNum).ttf");
+    src: url("../Fonts/woff/IRANSansWeb(FaNum).woff");
+    src: url("../Fonts/woff2/IRANSansWeb(FaNum).woff2");
+}
+/************************************* End of Font ----------> IranSans **********************************************/
+
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+        direction: rtl;
+    }
+
+    /********************************************Menu******************************************************/
+    .container section:nth-child(1) { /* With this marking we mean section which is the first child of menu */
+        width: inherit;
+        height: 60px;
+        background-color: lightgrey;
+    }
+
+    .container section:nth-child(1) nav {
+        width: 90%;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+    .container section:nth-child(1) nav ul {
+        width: inherit;
+        height: inherit;
+        text-align: center;
+        list-style: none;
+    }
+
+    .container section:nth-child(1) nav ul li {
+        display: inline-block;
+        width: 20%;
+        height: inherit;
+    }
+
+    .container section:nth-child(1) nav ul li a {
+        display: block;
+        font-family: "Iranian Sans";
+        color: black;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 0.2s linear;
+    }
+
+    .container section:nth-child(1) nav ul li a:hover {
+        background-color: blueviolet;
+        font-weight: bolder;
+    }
+
+    /********************************************End of Menu******************************************************/
+    /********************************************Slogan******************************************************/
+    .container section:nth-child(2) {
+        padding: 100px;
+        box-sizing: border-box;
+    }
+
+    .container section:nth-child(2) section {
+        width: auto;
+        height: auto;
+        padding: 30px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.85);
+        box-sizing: border-box;
+    }
+
+    .container section:nth-child(2) section h1:first-child {
+        font-family: "Iranian Sans";
+        text-align: center;
+        font-size: 30px;
+        color: whitesmoke;
+        margin-bottom: 20px;
+        transition: all 0.2s linear;
+    }
+
+    .container section:nth-child(2) section p:first-of-type {
+        font-family: "Iranian Sans";
+        text-align: center;
+        font-size: 15px;
+        color: whitesmoke;
+        transition: all 0.2s linear;
+        word-break: break-all;
+    }
+
+    /********************************************End of Slogan******************************************************/
+    /********************************************News******************************************************/
+    .container section:nth-child(3) {
+        width: inherit;
+        height: auto;
+        background-color: transparent;
+        padding: 50px;
+        box-sizing: border-box;
+        transition: all 0.2s linear;
+    }
+
+    .container section:nth-child(3) .news {
+        width: 30%;
+        height: auto;
+        background-color: transparent;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .container section:nth-child(3) .news h1 {
+        display: block;
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 27px;
+        color: black;
+    }
+
+    .container section:nth-child(3) .news p {
+        display: block;
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        color: black;
+        text-align: justify;
+        margin: 15px;
+    }
+
+    .container section:nth-child(3) .news img {
+        display: block;
+        background-color: transparent;
+        text-align: center;
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 100px;
+        height: 100px;
+    }
+
+    .container section:nth-child(3) .news a {
+        display: block;
+        line-height: 50px;
+        background-color: forestgreen;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        color: lightgrey;
+        margin: 15px;
+        text-decoration: none;
+    }
+
+    .container .news_section {
+        width: inherit;
+        height: auto;
+        background-color: transparent;
+        padding: 50px;
+        box-sizing: border-box;
+        transition: all 0.2s linear;
+    }
+
+    .container .news_section .news h1 {
+        display: block;
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 27px;
+        color: black;
+    }
+
+    .container .news_section .news p {
+        display: block;
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        color: black;
+        text-align: justify;
+        margin: 15px;
+    }
+
+    .container .news_section .news img {
+        display: block;
+        background-color: transparent;
+        text-align: center;
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 300px;
+        height: 300px;
+    }
+
+    .container .news_section .news a {
+        display: block;
+        line-height: 50px;
+        background-color: forestgreen;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        color: lightgrey;
+        margin: 15px;
+        text-decoration: none;
+    }
+
+
+    /********************************************End of News******************************************************/
+    /********************************************About******************************************************/
+    .container .about{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        transition: all 0.2s linear;
+        width: 100%;
+    }
+
+    .container .about section {
+        width: 70%;
+        height: auto;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .container .about section p {
+        font-family: "B Nazanin";
+        font-size: 20px;
+        color: lightgrey;
+        text-align: center;
+    }
+
+    /********************************************End of About******************************************************/
+    /********************************************Contact******************************************************/
+    .container .contact {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .container .contact form {
+        width: 70%;
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .container .contact form input[type=text] {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+    }
+
+    .container .contact form input[type=text]:focus {
+        width: 85%;
+    }
+
+    .container .contact form input[type=text]::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+    }
+
+    .container .contact form input[type=email] {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+    }
+
+    .container .contact form input[type=email]:focus {
+        width: 85%;
+    }
+
+    .container .contact form input[type=email]::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+    }
+
+    .container .contact form textarea {
+        width: 70%;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        background-color: transparent;
+        resize: none;
+    }
+
+    .container .contact form textarea::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+        padding-top: 40px;
+    }
+
+    .container .contact form input[type=submit] {
+        width: 70%;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        background-color: green;
+        border-radius: 5px;
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: black;
+    }
+
+    /********************************************End of Contact******************************************************/
+    /********************************************Footer******************************************************/
+    .container .footer {
+        width: 100%;
+        height: 50px !important;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.9) !important;
+    }
+
+    .container .footer p {
+        font-family: "Comic Sans MS";
+        font-size: 15px;
+        color: whitesmoke;
+    }
+
+    /********************************************End of Footer******************************************************/
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+    .container {
+        width: 100%;
+        direction: rtl;
+    }
+
+    /********************************************Menu******************************************************/
+    .container section:nth-child(1) { /* With this marking we mean section which is the first child of menu */
+        width: inherit;
+        height: 60px;
+        background-color: lightgrey;
+    }
+
+    .container section:nth-child(1) nav {
+        width: 90%;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+    .container section:nth-child(1) nav ul {
+        width: auto;
+        height: inherit;
+        text-align: center;
+        list-style: none;
+    }
+
+    .container section:nth-child(1) nav ul li {
+        display: inline-block;
+        width: 20%;
+        height: inherit;
+    }
+
+    .container section:nth-child(1) nav ul li a {
+        display: block;
+        font-family: "Iranian Sans";
+        color: black;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 0.2s linear;
+    }
+
+    .container section:nth-child(1) nav ul li a:hover {
+        background-color: blueviolet;
+        font-weight: bolder;
+    }
+
+    /********************************************End of Menu******************************************************/
+    /********************************************Slogan******************************************************/
+    .container section:nth-child(2) {
+        padding: 100px;
+        box-sizing: border-box;
+    }
+
+    .container section:nth-child(2) section {
+        width: auto;
+        height: auto;
+        padding: 30px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.85);
+        box-sizing: border-box;
+    }
+
+    .container section:nth-child(2) section h1:first-child {
+        font-family: "Iranian Sans";
+        text-align: center;
+        font-size: 30px;
+        color: whitesmoke;
+        margin-bottom: 20px;
+    }
+
+    .container section:nth-child(2) section p:first-of-type {
+        font-family: "Iranian Sans";
+        text-align: center;
+        font-size: 15px;
+        color: whitesmoke;
+    }
+
+    /********************************************End of Slogan******************************************************/
+    /********************************************News******************************************************/
+    .container section:nth-child(3) {
+        width: inherit;
+        height: auto;
+        background-color: transparent;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+    .container section:nth-child(3) .news {
+        width: 30%;
+        height: auto;
+        background-color: transparent;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .container section:nth-child(3) .news h1 {
+        display: block;
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 27px;
+        color: black;
+    }
+
+    .container section:nth-child(3) .news p {
+        display: block;
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        color: black;
+        text-align: justify;
+        margin: 15px;
+    }
+
+    .container section:nth-child(3) .news img {
+        display: block;
+        background-color: transparent;
+        text-align: center;
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 100px;
+        height: 100px;
+    }
+
+    .container section:nth-child(3) .news a {
+        display: block;
+        line-height: 50px;
+        background-color: forestgreen;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        color: lightgrey;
+        margin: 15px;
+        text-decoration: none;
+    }
+
+
+    /********************************************End of News******************************************************/
+    /********************************************About******************************************************/
+    .container .about{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        transition: all 0.2s linear;
+
+    }
+
+    .container .about section {
+        width: 70%;
+        height: auto;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .container .about section p {
+        font-family: "B Nazanin";
+        font-size: 20px;
+        color: lightgrey;
+        text-align: center;
+    }
+
+    /********************************************End of About******************************************************/
+    /********************************************Contact******************************************************/
+    .container .contact {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .container .contact form {
+        width: 60%;
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .container .contact form input[type=text] {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+    }
+
+    .container .contact form input[type=text]:focus {
+        width: 85%;
+    }
+
+    .container .contact form input[type=text]::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+    }
+
+    .container .contact form input[type=email] {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+    }
+
+    .container .contact form input[type=email]:focus {
+        width: 85%;
+    }
+
+    .container .contact form input[type=email]::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+    }
+
+    .container .contact form textarea {
+        width: 70%;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        background-color: transparent;
+        resize: none;
+    }
+
+    .container .contact form textarea::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+        padding-top: 40px;
+    }
+
+    .container .contact form input[type=submit] {
+        width: 70%;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        background-color: green;
+        border-radius: 5px;
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: black;
+    }
+
+    /********************************************End of Contact******************************************************/
+    /********************************************Footer******************************************************/
+    .container .footer {
+        width: 100%;
+        height: 50px !important;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.9) !important;
+    }
+
+    .container .footer p {
+        font-family: "Comic Sans MS";
+        font-size: 15px;
+        color: whitesmoke;
+    }
+
+    /********************************************End of Footer******************************************************/
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .container {
+        width: 100%;
+        direction: rtl;
+    }
+
+    /********************************************Menu******************************************************/
+    .container section:nth-child(1) { /* With this marking we mean section which is the first child of menu */
+        width: inherit;
+        height: 60px;
+        background-color: lightgrey;
+    }
+
+    .container section:nth-child(1) nav {
+        width: 90%;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+    .container section:nth-child(1) nav ul {
+        width: inherit;
+        height: inherit;
+        text-align: center;
+        list-style: none;
+    }
+
+    .container section:nth-child(1) nav ul li {
+        display: inline-block;
+        width: 20%;
+        height: inherit;
+    }
+
+    .container section:nth-child(1) nav ul li a {
+        display: block;
+        font-family: "Iranian Sans";
+        color: black;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 0.2s linear;
+    }
+
+    .container section:nth-child(1) nav ul li a:hover {
+        background-color: blueviolet;
+        font-weight: bolder;
+    }
+
+    /********************************************End of Menu******************************************************/
+    /********************************************Slogan******************************************************/
+    .container section:nth-child(2) {
+        padding: 100px;
+        box-sizing: border-box;
+    }
+
+    .container section:nth-child(2) section {
+        width: auto;
+        height: auto;
+        padding: 30px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.85);
+        box-sizing: border-box;
+    }
+
+    .container section:nth-child(2) section h1:first-child {
+        font-family: "Iranian Sans";
+        text-align: center;
+        font-size: 30px;
+        color: whitesmoke;
+        margin-bottom: 20px;
+    }
+
+    .container section:nth-child(2) section p:first-of-type {
+        font-family: "Iranian Sans";
+        text-align: center;
+        font-size: 15px;
+        color: whitesmoke;
+    }
+
+    /********************************************End of Slogan******************************************************/
+    /********************************************News******************************************************/
+    .container section:nth-child(3) {
+        width: inherit;
+        height: auto;
+        background-color: transparent;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+    .container section:nth-child(3) .news {
+        width: 30%;
+        height: auto;
+        background-color: transparent;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .container section:nth-child(3) .news h1 {
+        display: block;
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 27px;
+        color: black;
+    }
+
+    .container section:nth-child(3) .news p {
+        display: block;
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        color: black;
+        text-align: justify;
+        margin: 15px;
+    }
+
+    .container section:nth-child(3) .news img {
+        display: block;
+        height: 100px !important;
+        width: 100px !important;
+        background-color: transparent;
+        text-align: center;
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 75px;
+        height: 75px;
+    }
+
+    .container section:nth-child(3) .news a {
+        display: block;
+        line-height: 50px;
+        background-color: forestgreen;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        color: lightgrey;
+        margin: 15px;
+        text-decoration: none;
+    }
+
+
+    /********************************************End of News******************************************************/
+    /********************************************About******************************************************/
+    .container .about{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        transition: all 0.2s linear;
+    }
+
+    .container .about section {
+        width: 70%;
+        height: auto;
+        padding: 30px;
+        /*background-color: rgba(0, 0, 0, 0.4);*/
+        background-color: #e2802b;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .container .about section p {
+        font-family: "B Nazanin";
+        font-size: 20px;
+        color: lightgrey;
+        text-align: center;
+    }
+
+    /********************************************End of About******************************************************/
+    /********************************************Contact******************************************************/
+    .container .contact {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .container .contact form {
+        width: 60%;
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .container .contact form input[type=text] {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+    }
+
+    .container .contact form input[type=text]:focus {
+        width: 85%;
+    }
+
+    .container .contact form input[type=text]::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+    }
+
+    .container .contact form input[type=email] {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+    }
+
+    .container .contact form input[type=email]:focus {
+        width: 85%;
+    }
+
+    .container .contact form input[type=email]::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+    }
+
+    .container .contact form textarea {
+        width: 70%;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        background-color: transparent;
+        resize: none;
+    }
+
+    .container .contact form textarea::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+        padding-top: 40px;
+    }
+
+    .container .contact form input[type=submit] {
+        width: 70%;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        background-color: green;
+        border-radius: 5px;
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: black;
+    }
+
+    /********************************************End of Contact******************************************************/
+    /********************************************Footer******************************************************/
+    .container .footer {
+        width: 100%;
+        height: 50px !important;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.9) !important;
+    }
+
+    .container .footer p {
+        font-family: "Comic Sans MS";
+        font-size: 15px;
+        color: whitesmoke;
+    }
+
+    /********************************************End of Footer******************************************************/
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+    .container {
+        width: 100%;
+        direction: rtl;
+    }
+
+    /********************************************Menu******************************************************/
+    .container section:nth-child(1) { /* With this marking we mean section which is the first child of menu */
+        width: inherit;
+        height: 60px;
+        background-color: lightgrey;
+    }
+
+    .container section:nth-child(1) nav {
+        width: 90%;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+    .container section:nth-child(1) nav ul {
+        width: inherit;
+        height: inherit;
+        text-align: center;
+        list-style: none;
+    }
+
+    .container section:nth-child(1) nav ul li {
+        display: inline-block;
+        width: 20%;
+        height: inherit;
+    }
+
+    .container section:nth-child(1) nav ul li a {
+        display: block;
+        font-family: "Iranian Sans";
+        color: black;
+        font-size: 17px;
+        line-height: 60px;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 0.2s linear;
+    }
+
+    .container section:nth-child(1) nav ul li a:hover {
+        background-color: blueviolet;
+        font-weight: bolder;
+    }
+
+    /********************************************End of Menu******************************************************/
+    /********************************************Slogan******************************************************/
+    .container section:nth-child(2) {
+        padding: 100px;
+        box-sizing: border-box;
+    }
+
+    .container section:nth-child(2) section {
+        width: auto;
+        padding: 30px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.85);
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .container section:nth-child(2) section h1:first-child {
+        font-family: "Iranian Sans";
+        text-align: center;
+        font-size: 30px;
+        color: whitesmoke;
+        margin-bottom: 20px;
+    }
+
+    .container section:nth-child(2) section p:first-of-type {
+        font-family: "Iranian Sans";
+        text-align: center;
+        font-size: 15px;
+        color: whitesmoke;
+    }
+
+    /********************************************End of Slogan******************************************************/
+    /********************************************News******************************************************/
+    .container section:nth-child(3) {
+        width: inherit;
+        height: auto;
+        background-color: transparent;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+    .container section:nth-child(3) .news {
+        width: 30%;
+        height: auto;
+        background-color: transparent;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .container section:nth-child(3) .news h1 {
+        display: block;
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 27px;
+        color: black;
+    }
+
+    .container section:nth-child(3) .news p {
+        display: block;
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        color: black;
+        text-align: justify;
+        margin: 15px;
+    }
+
+    .container section:nth-child(3) .news img {
+        display: block;
+        background-color: transparent;
+        text-align: center;
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+    }
+
+    .container section:nth-child(3) .news a {
+        display: block;
+        line-height: 50px;
+        background-color: forestgreen;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        color: lightgrey;
+        margin: 15px;
+        text-decoration: none;
+    }
+
+
+    /********************************************End of News******************************************************/
+    /********************************************About******************************************************/
+    .container .about{
+        padding-top: 25px;
+        padding-right: 15px;
+        padding-bottom: 25px;
+        transition: all 0.2s linear;
+    }
+    .container .about section {
+        width: 70%;
+        height: auto;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px black;
+        text-align: center;
+    }
+
+    .container .about section p {
+        font-family: "B Nazanin";
+        font-size: 17px;
+        color: lightgrey;
+        text-align: center;
+    }
+
+    /********************************************End of About******************************************************/
+    /********************************************Contact******************************************************/
+    .container .contact {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .container .contact form {
+        width: 60%;
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .container .contact form input[type=text] {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+    }
+
+    .container .contact form input[type=text]:focus {
+        width: 85%;
+    }
+
+    .container .contact form input[type=text]::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+        font-size: 11px;
+    }
+
+    .container .contact form input[type=email] {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+    }
+
+    .container .contact form input[type=email]:focus {
+        width: 85%;
+    }
+
+    .container .contact form input[type=email]::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+        font-size: 11px;
+    }
+
+    .container .contact form textarea {
+        width: 70%;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        background-color: transparent;
+        resize: none;
+    }
+
+    .container .contact form textarea::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+        padding-top: 40px;
+    }
+
+    .container .contact form input[type=submit] {
+        width: 70%;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        background-color: green;
+        border-radius: 5px;
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: black;
+    }
+
+    /********************************************End of Contact******************************************************/
+    /********************************************Footer******************************************************/
+    .container .footer {
+        width: 100%;
+        height: 50px !important;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.9) !important;
+    }
+
+    .container .footer p {
+        font-family: "Comic Sans MS";
+        font-size: 15px;
+        color: whitesmoke;
+    }
+
+    /********************************************End of Footer******************************************************/
+}
+
+@media (max-width: 560px) {
+    .container {
+        width: 100%;
+        direction: rtl;
+    }
+
+    /********************************************Menu******************************************************/
+    .container section:nth-child(1) { /* With this marking we mean section which is the first child of menu */
+        width: 100%;
+        height: auto;
+        background-color: lightgrey;
+    }
+
+    .container section:nth-child(1) nav {
+        width: 90%;
+        height: inherit;
+        margin: 0 auto;
+    }
+
+    .container section:nth-child(1) nav ul {
+        width: inherit;
+        height: inherit;
+        text-align: center;
+        list-style: none;
+        margin: 0 auto;
+    }
+
+    .container section:nth-child(1) nav ul li {
+        display: block;
+        width: auto;
+        height: inherit;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .container section:nth-child(1) nav ul li a {
+        display: block;
+        font-family: "Iranian Sans";
+        color: black;
+        font-size: 12px;
+        line-height: 60px;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all 0.2s linear;
+    }
+
+    .container section:nth-child(1) nav ul li a:hover {
+        background-color: blueviolet;
+        font-weight: bolder;
+    }
+
+    /********************************************End of Menu******************************************************/
+    /********************************************Slogan******************************************************/
+    .container section:nth-child(2) {
+        padding: 100px;
+        box-sizing: border-box;
+    }
+
+    .container section:nth-child(2) section {
+        width: auto;
+        padding: 30px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.85);
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .container section:nth-child(2) section h1:first-child {
+        font-family: "Iranian Sans";
+        text-align: center;
+        font-size: 30px;
+        color: whitesmoke;
+        margin-bottom: 20px;
+    }
+
+    .container section:nth-child(2) section p:first-of-type {
+        font-family: "Iranian Sans";
+        text-align: center;
+        font-size: 15px;
+        color: whitesmoke;
+    }
+
+    /********************************************End of Slogan******************************************************/
+    /********************************************News******************************************************/
+    .container section:nth-child(3) {
+        width: inherit;
+        background-color: transparent;
+        padding: 30px;
+    }
+
+    .container section:nth-child(3) .news {
+        width: 30%;
+        height: auto;
+        background-color: transparent;
+        display: inline-block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 5px;
+    }
+
+    .container section:nth-child(3) .news h1 {
+        display: block;
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 27px;
+        color: black;
+    }
+
+    .container section:nth-child(3) .news p {
+        display: block;
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        color: black;
+        text-align: justify;
+        margin: 15px;
+    }
+
+    .container section:nth-child(3) .news img {
+        display: block;
+        background-color: transparent;
+        text-align: center;
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 40px;
+        height: 40px;
+    }
+
+    .container section:nth-child(3) .news a {
+        display: block;
+        line-height: 50px;
+        background-color: forestgreen;
+        text-align: center;
+        font-family: "B Nazanin";
+        font-size: 18px;
+        color: lightgrey;
+        margin: 15px;
+        text-decoration: none;
+    }
+
+
+
+
+    /********************************************End of News******************************************************/
+    /********************************************About******************************************************/
+    .container .about{
+        padding-top: 25px;
+        padding-right: 10px;
+        padding-bottom: 25px;
+        transition: all 0.2s linear;
+    }
+
+    .container .about section {
+        width: 70%;
+        height: auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .container .about section p {
+        font-family: "B Nazanin";
+        font-size: 15px;
+        color: lightgrey;
+        text-align: center;
+    }
+
+    /********************************************End of About******************************************************/
+    /********************************************Contact******************************************************/
+    .container .contact {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .container .contact form {
+        width: 60%;
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .container .contact form input[type=text] {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+    }
+
+    .container .contact form input[type=text]:focus {
+        width: 85%;
+    }
+
+    .container .contact form input[type=text]::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+        font-size: 8px;
+    }
+
+    .container .contact form input[type=email] {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        transition: all 0.2s ease;
+        background-color: transparent;
+    }
+
+    .container .contact form input[type=email]:focus {
+        width: 85%;
+    }
+
+    .container .contact form input[type=email]::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+        font-size: 8px;
+    }
+
+    .container .contact form textarea {
+        width: 70%;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px inset lightgrey;
+        background-color: transparent;
+        resize: none;
+    }
+
+    .container .contact form textarea::placeholder {
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: lightgrey;
+        padding-top: 40px;
+        font-size: 8px;
+    }
+
+    .container .contact form input[type=submit] {
+        width: 70%;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border: none;
+        background-color: green;
+        border-radius: 5px;
+        font-family: "Iranian Sans";
+        text-align: center;
+        color: black;
+    }
+
+    /********************************************End of Contact******************************************************/
+    /********************************************Footer******************************************************/
+    .container .footer {
+        width: 100%;
+        height: 50px !important;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.9); !important;
+    }
+
+    .container .footer p {
+        font-family: "Comic Sans MS";
+        font-size: 15px;
+        color: whitesmoke;
+    }
+
+    /********************************************End of Footer******************************************************/
+}
